@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버거킹</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="../img/icon/icon.ico">
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="./js/swiper.js"></script>
+    <!-- index -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/index.js"></script>
+    <!-- pc css -->
+    <link rel="stylesheet" href="./css/pc.css">
+    <!-- laptop css -->
+    <link rel="stylesheet" href="./css/laptop.css">
+    <!-- tab -->
+    <link rel="stylesheet" href="./css/tab.css">
+    <!-- mobile css -->
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="h_inner">
+                <div id="m_delivery">
+                    <div id="m_delivery_img">
+                        <a href="#">
+                            <img src="./img/svg/bike(w_3px).svg" alt="딜리버리">
+                        </a>
+                    </div>
+                </div>
+                <div id="h_logo">
+                    <a href="#">
+                        <img src="./img/버거킹로고.gif" alt="버거킹로고">
+                    </a>
+                </div>
+                <div id="main_menu">
+                    <ul>
+                        <li>
+                            <a href="#">메뉴</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">스페셜&할인팩</a></li>
+                                <li><a href="#">프리미엄</a></li>
+                                <li><a href="#">와퍼</a></li>
+                                <li><a href="#">주니어&버거</a></li>
+                                <li><a href="#">올데이킹&치킨버거</a></li>
+                                <li><a href="#">사이드</a></li>
+                                <li><a href="#">음료&디저트</a></li>
+                                <li><a href="#">독퍼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">매장소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="매장찾기">매장찾기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드스토리</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">BRAND</a></li>
+                                <li><a href="#">WHOPPER</a></li>
+                                <li><a href="#">COMM.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="delivery">
+                    <a href="#">Delivery</a>
+                </div>
+                <div id="m_bk"></div>
+                <div id="m_burger">
+                    <div id="burger_box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="m_menu">
+                    <div id="m_close">
+                        <div id="m_close_box">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">메뉴
+                                <div class="m_next_icon">
+                                    <img src="./img/icon/m_next.png" alt="화살표아이콘">
+                                </div>
+                            </a>
+                            <ul class="m_sub_menu">
+                                <li><a href="#">스페셜&할인팩</a></li>
+                                <li><a href="#">프리미엄</a></li>
+                                <li><a href="#">와퍼</a></li>
+                                <li><a href="#">주니어&버거</a></li>
+                                <li><a href="#">올데이킹&치킨버거</a></li>
+                                <li><a href="#">사이드</a></li>
+                                <li><a href="#">음료&디저트</a></li>
+                                <li><a href="#">독퍼</a></li>
+                            </ul>
+                            <div class="m_menu_line"></div>
+                        </li>
+                        <li>
+                            <a href="#">매장소개
+                                <div class="m_next_icon">
+                                    <img src="./img/icon/m_next.png" alt="화살표아이콘">
+                                </div>
+                            </a>
+                            <ul class="m_sub_menu">
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                            <div class="m_menu_line"></div>
+                        </li>
+                        <li>
+                            <a href="#">이벤트
+                                <div class="m_next_icon">
+                                    <img src="./img/icon/m_next.png" alt="화살표아이콘">
+                                </div>
+                            </a>
+                            <ul class="m_sub_menu">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">신규매장</a></li>
+                            </ul>
+                            <div class="m_menu_line"></div>
+                        </li>
+                        <li>
+                            <a href="#">브랜드스토리
+                                <div class="m_next_icon">
+                                    <img src="./img/icon/m_next.png" alt="화살표아이콘">
+                                </div>
+                            </a>
+                            <ul class="m_sub_menu">
+                                <li><a href="#">BRAND</a></li>
+                                <li><a href="#">WHOPPER</a></li>
+                                <li><a href="#">COMM.</a></li>
+                            </ul>
+                            <div class="m_menu_line"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="sec1_con">
+            <section id="sec1" class="swiper mySwiper first_swiper">
+                <div class="swiper-wrapper" id="sec1_swiper1">
+                    <div class="swiper-slide">
+                        <img src="./img/slider_img2.png" alt="슬라이더이미지1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider_img2.png" alt="슬라이더이미지1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider_img2.png" alt="슬라이더이미지1">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <!-- Initialize Swiper -->
+            <script>
+                var firstSwiper = new Swiper(".first_swiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                loop: true,
+                });
+            </script>
+            <section id="sec1_tab_swiper" class="swiper mySwiper three_swiper">
+                <div class="swiper-wrapper" id="sec1_swiper1">
+                    <div class="swiper-slide">
+                        <img src="./img/m_slider_img1.png" alt="슬라이더이미지1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/m_slider_img2.png" alt="슬라이더이미지1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/m_slider_img3.png" alt="슬라이더이미지1">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+            <div class="main_bg">
+                <img src="./img/bg_top3.png" alt="배경이미지">
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                var firstSwiper = new Swiper(".three_swiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                loop: true,
+                });
+            </script>
+        </div>
+        <section  id="sec2">
+            <div class="main_bg">
+                <img src="./img/bg_center5.png" alt="배경이미지">
+            </div>
+            <div id="bg_right_icon">
+                <img src="./img/svg/버거일러(3px).svg" alt="버거일러">
+            </div>
+            <div id="bg_left_icon2">
+                <img src="./img/svg/french_white.svg" alt="감자튀김">
+            </div>
+            <div id="bg_left_icon1">
+                <img src="./img/svg/버거일러(3px).svg" alt="버거일러">
+            </div>
+            <div class="container_1200">
+                <div id="sec2_left">
+                    <div id="m_sec2_img">
+                        <img src="./img/디아블로텍스트(black) (2).png" alt="디아블로이미지">
+                    </div>
+                    <video muted autoplay loop>
+                        <source src="./video/video1.mp4">
+                    </video>
+                </div>
+                <div id="sec2_right">
+                    <div id="sec2_text">
+                        <p><strong>버거맛</strong>의 한계를 뚫었다</p>
+                        <div id="sec2_img">
+                            <img src="./img/디아블로텍스트(black) (2).png" alt="디아블로이미지">
+                        </div>
+                        <div id="sec2_text_box">
+                            <p><strong>버거맛</strong>의 한계를 뚫었다</p>
+                            <p>두툼하고 바삭한 <strong>도넛치킨</strong>에</p>
+                            <p>100% <strong>순쇠고기 패티</strong></p>
+                            <p>매콤한 <strong>디아블로 소스</strong>까지</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="sec3">
+            <div id="sec3_con">
+                <div class="main_bg">
+                    <img src="./img/bg_bot3.png" alt="배경이미지">
+                </div>
+                <div id="sec3_bg">
+                    <img src="./img/sec3_bg_img.png" alt="배경이미지2">
+                </div>
+                <div id="container_1500">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="container_1200">
+                        <div id="tab_header">
+                            <h1><span>BURGER KING</span> Menu</h1>
+                            <ul id="tab_menu">
+                                <li><a href="#work01" class="on">프리미엄</a></li>
+                                <li><a href="#work02">와퍼</a></li>
+                                <li><a href="#work03">주니어&버거</a></li>
+                                <li><a href="#work04">사이드</a></li>
+                                <li><a href="#work05">음료&디저트</a></li>
+                            </ul>
+                        </div>
+                        <div id="tab_con">
+                            <section id="work01" class="swiper mySwiper second_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/프리미엄/콰트로치즈버거.png" alt="콰트로치즈와퍼">
+                                            <p>콰트로치즈와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/프리미엄/통새우.png" alt="통새우와퍼">
+                                            <p>통새우와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/프리미엄/할라피뇨.png" alt="할라피뇨와퍼">
+                                            <p>할라피뇨와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/프리미엄/디아블로.png" alt="디아블로 얼티밋 도넛킹">
+                                            <p>디아블로 얼티밋 도넛</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img//burger/프리미엄/기네스콰드로.png" alt="기네스콰트로치즈와퍼">
+                                            <p>기네스콰트로치즈와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/프리미엄/기네스머쉬룸.png" alt="기네스머쉬룸와퍼">
+                                            <p>기네스머쉬룸와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img//burger/프리미엄/기네스.png" alt="기네스와퍼">
+                                            <p>기네스와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img//burger/프리미엄/몬스터.png" alt="몬스터와퍼">
+                                            <p>몬스터와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img//burger/프리미엄/몬스터x.png" alt="몬스터x">
+                                            <p>몬스터x</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img//burger/프리미엄/콰트로치즈x.png" alt="콰트로치즈x">
+                                            <p>콰트로치즈x</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img//burger/프리미엄/통새우x.png" alt="통새우x">
+                                            <p>통새우x</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="work02" class="swiper mySwiper second_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/스테커2.png" alt="스태커2와퍼">
+                                            <p>스태커2와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/스태커3.png" alt="스태커3와퍼">
+                                            <p>스태커3와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/스태커4.png" alt="스태커4와퍼">
+                                            <p>스태커4와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/갈릭불고기.png" alt="갈릭불고기와퍼">
+                                            <p>갈릭불고기와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/베이컨치즈.png" alt="베이컨치즈와퍼">
+                                            <p>베이컨치즈와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/치즈.png" alt="치즈와퍼">
+                                            <p>치즈와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/와퍼.png" alt="와퍼">
+                                            <p>와퍼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/와퍼/불고기.png" alt="불고기와퍼">
+                                            <p>불고기와퍼</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="work03" class="swiper mySwiper second_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/비프&슈림프.png" alt="비르&슈림프버거">
+                                            <p>비르&슈림프버거</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/통새우.png" alt="통새우슈림프버거">
+                                            <p>통새우슈림프버거</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/잔망루피.png" alt="잔망루피슈림프버거">
+                                            <p>잔망루피슈림프버거</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/직화버섯.png" alt="직화버섯소불고기버거">
+                                            <p>직화버섯소불고기버거</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/직화불고기.png" alt="직화소불고기버거">
+                                            <p>잔망루피슈림프버거</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/통새우와퍼.png" alt="통새우와퍼주니어">
+                                            <p>통새우와퍼주니어</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어//콰트로치즈.png" alt="콰트로치즈와퍼주니어">
+                                            <p>콰트로치즈와퍼주니어</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/치즈와퍼.png" alt="치즈와퍼주니어">
+                                            <p>치즈와퍼주니어</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/와퍼주니어.png" alt="와퍼주니어">
+                                            <p>와퍼주니어</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/불고기와퍼.png" alt="불고기와퍼주니어">
+                                            <p>불고기와퍼주니어</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/주니어/치즈.png" alt="치즈버거">
+                                            <p>치즈버거</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="work04" class="swiper mySwiper second_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/치킨도넛1.png" alt="치킨 도넛 1조각">
+                                            <p>치킨 도넛 1조각</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/앵그리너겟.png" alt="앵그리 너겟킹 8조각">
+                                            <p>앵그리 너겟킹 8조각</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/너겟킹.png" alt="너겟킹8조각">
+                                            <p>너겟킹8조각</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/앵그리너겟(단).png" alt="앵그리 너겟킹">
+                                            <p>앵그리 너겟킹</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/너겟.png" alt="너겟킹">
+                                            <p>너겟킹</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/21치즈스틱.png" alt="21치즈스틱">
+                                            <p>21치즈스틱</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/바삭킹.png" alt="바삭킹">
+                                            <p>바삭킹</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/바삭킹8.png" alt="바삭킹8조각+소스">
+                                            <p>바삭킹8조각+소스</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/크라미모치즈볼.png" alt="크리미모짜볼">
+                                            <p>크리미모짜볼</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/코코넛.png" alt="코코넛쉬림프+칠리소스">
+                                            <p>코코넛쉬림프+칠리소스</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/어니언.png" alt="어니언링">
+                                            <p>어니언링</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/쉐이킹프라이.png" alt="쉐이킹프라이">
+                                            <p>쉐이킹프라이</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/치즈프라이.png" alt="치즈프라이">
+                                            <p>치즈프라이</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/프렌치프라이.png" alt="프렌치프라이">
+                                            <p>프렌치프라이</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/코울.png" alt="코울슬로">
+                                            <p>코울슬로</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/콘샐러드.png" alt="콘샐러드">
+                                            <p>콘샐러드</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/시즈닝.png" alt="시즈닝">
+                                            <p>시즈닝</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/사이드/사이드소스.png" alt="사이드소스">
+                                            <p>사이드소스</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="work05" class="swiper mySwiper second_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/아메이카노.png" alt="아메리카노">
+                                            <p>아메리카노</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/핫초코.png" alt="핫초코">
+                                            <p>핫초코</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/아이스초코.png" alt="아이스초코">
+                                            <p>아이스초코</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/팝핑캔디.png" alt="팝핑캔디 선데">
+                                            <p>팝핑캔디 선데</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/선데.png" alt="선데">
+                                            <p>아이스초코</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/컵아이스크림.png" alt="컵 아이스크림">
+                                            <p>컵 아이스크림</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/코카콜라.png" alt="코카콜라">
+                                            <p>코카콜라</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/코카콜라제로.png" alt="코카콜라제로">
+                                            <p>코카콜라제로</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/스프라이트.png" alt="스프라이트">
+                                            <p>스프라이트</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/씨그램.png" alt="씨그램">
+                                            <p>씨그램</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/오렌지.png" alt="미닛메이드 오렌지">
+                                            <p>미닛메이드 오렌지</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="burger_img">
+                                            <img src="./img/burger/음료/순수.png" alt="순수(미네랄워터)">
+                                            <p>순수(미네랄워터)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var secondSwiper = new Swiper(".second_swiper", {
+                                slidesPerView: 4,
+                                slidesPerGroup: 1,
+                                loop: true,
+                                loopFillGroupWithBlank: true,
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                },
+                                observer: true,
+                                observeParents: true,
+    
+                                breakpoints : {
+                                    1024 : {
+                                        slidesPerView: 3,
+                                    },
+                                    760 : {
+                                        slidesPerView: 2,
+                                    },
+                                    401 : {
+                                        slidesPerView : 1,
+                                    },
+                                }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section  id="sec4">
+            <video muted autoplay loop>
+                <source src="./video/video2.mp4">
+            </video>
+        </section>
+        <section  id="sec5">
+            <div class="container_1200">
+                <div id="sec5_box">
+                    <div id="sec5_left">
+                        <div class="box_inner">
+                            <div class="sec5_icon">
+                                <img src="./img/svg/burgerAi_black.svg" alt="킹오더이미지">
+                                <h3>킹오더</h3>
+                            </div>
+                            <p>매장에서 <br>바로 받아 보세요</p>
+                            <button id="sec5_btn"><a href="#">바로가기</a></button>
+                        </div>
+                    </div>
+                    <div id="sec5_center">
+                        <div class="box_inner">
+                            <div class="sec5_icon">
+                                <img src="./img/svg/bike(3px).svg" alt="바이크이미지">
+                                <h3>딜리버리</h3>
+                            </div>
+                            <p>홈서비스도 매장과<br>동일한 가격으로 주문</p>
+                            <button id="sec5_btn"><a href="#">바로가기</a></button>
+                        </div>
+                    </div>
+                    <div id="sec5_right">
+                        <div class="box_inner">
+                            <div class="sec5_icon">
+                                <img src="./img/svg/home(3px).svg" alt="홈이미지">
+                                <h3>매장찾기</h3>
+                            </div>
+                            <p>주변의 버거킹을 찾아보세요</p>
+                            <button id="sec5_btn"><a href="#">바로가기</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container_1200">
+                <div id="footer_left">
+                    <div id="footer_logo">
+                        <img src="./img/버거킹logo2.png" alt="버거킹로고">
+                    </div>
+                    <div id="footer_left_text">
+                        <p>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알 <span class="line"></span> 전화주문 1599-0505</p>
+                        <p>사업자 등록번호 101-86-76277 <span class="line"></span> (주)BKR 대표이사 문영주</p>
+                        <p>Copyright 2022 BKR Co. Ltd. All right Reserved</p>
+                    </div>
+                </div>
+                <div id="footer_right">
+                    <div id="footer_right_text">
+                        <p>이용약관 <span class="line"></span> 개인정보취급방침 <span class="line"></span> 법적고지</p>
+                        <div id="footer_icon">
+                            <a href="#">
+                                <img src="./img/icon/face.png" alt="페이스북아이콘">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icon/instar.png" alt="인스타그램아이콘">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icon/youtu(c).png" alt="유뷰트아이콘">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

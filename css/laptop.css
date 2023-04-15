@@ -1,0 +1,315 @@
+@media all and (max-width : 1024px) and (min-width: 761px) {
+    #main_menu, #delivery {
+        display: none;
+    }
+    #m_delivery, #m_burger, #m_menu {
+        display: block; 
+    }
+    #h_inner {
+        position: relative;
+    }
+    #h_logo {
+        float: none;
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #m_delivery {
+        width: 60px;
+        height: 60px;
+        background-color: #D52300;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    #m_delivery_img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    #m_delivery_img > a {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #m_bk {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 70%);
+        position: fixed;
+        top: 0;
+        display: none;
+    }
+    #m_burger {
+        width: 30px;
+        height: 26px;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    #burger_box {
+        width: 100%;
+        height: 100%;
+        position: relative;   
+    }
+    #burger_box > span {
+        width: 100%;
+        height: 5px;
+        border-radius: 25px;
+        position: absolute;
+        background-color: #333;
+    }
+    #burger_box > span:first-child{
+        top: 0;
+    }
+    #burger_box > span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #burger_box > span:last-child{
+        bottom: 0;
+    }
+    #m_close {
+        width: 30px;
+        height: 26px;
+        position: absolute;
+        top: 3%;
+        right: 6%;
+        cursor: pointer;
+    }
+    #m_close_box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    #m_close_box > span {
+        width: 100%;
+        height: 5px;
+        border-radius: 25px;
+        top: 50%;
+        position: absolute;
+        background-color: #333;
+    }
+    #m_close_box > span:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    #m_close_box > span:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+    #m_menu {
+        width: 55%;
+        height: 100%;
+        padding: 24px;
+        padding-top: 65px;
+        background-color: #ffffff;
+        position: fixed;
+        right: -100%;
+        box-shadow: -3px 0px 6px rgb(0 0 0 / 20%);
+    }
+    #m_menu > ul > li {
+        width: 100%;
+        height: 56px;
+        padding: 12px;
+        overflow: hidden;
+        position: relative;
+    }
+    #m_menu > ul {
+        margin-top: 30px;
+    }
+    #m_menu > ul > .open {
+        height: auto;
+    }
+    .open .m_next_icon > img {
+        transform: rotate(90deg);
+    }
+    #m_menu > ul > li > a {
+        position: relative;
+        font-size: 20px;
+    }
+    .m_next_icon {
+        width: 19px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .m_next_icon > img {
+        transition: all 0.7s;
+    }
+    .m_sub_menu {
+        padding-top: 15px;
+    }
+    .m_sub_menu > li {
+        margin-bottom: 8px;
+    }
+    .m_sub_menu > li > a {
+        font-size: 14px;
+    }
+    .m_sub_menu > li > a:hover {
+        color: rgba(0, 0, 0, 32%);
+    }
+    .m_menu_line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 32%);
+        position: absolute;
+        bottom: 0;
+    }
+    /* section1 시작 */
+    #sec1 {
+        height: auto;
+        background-color: white;
+        display: none;
+    }
+    #sec1_tab_swiper {
+        display: block;
+    }
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    #sec1_tab_swiper .swiper-slide:nth-child(2),
+    #sec1_tab_swiper .swiper-slide:nth-child(3),
+    #sec1_tab_swiper .swiper-slide:nth-child(4) {
+        margin-top: 100px;
+    }
+    #sec1_tab_swiper .swiper-slide {
+        height: auto;
+    }
+    #sec1_con > .main_bg {
+        transform: rotateX(90deg);
+    }
+    #sec2 > .main_bg {
+        opacity: 0;
+    }
+    #sec3_con > .main_bg {
+        transform: rotateX(-90deg);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 40%;
+    }
+    /* section2 시작 */
+    #sec2 {
+        background-color: #D52300;
+        padding: 0 50px;
+    }
+    #sec2 > .container_1200 {
+        display: block;
+        padding: 97.835px 0;
+    }
+    #sec2_text > p:first-child {
+        display: none;
+    }
+    #sec2_left {
+        width: 100%;
+    }
+    #sec2_left > video {
+        width: 100%;
+    }
+    #sec2_text {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    #sec2_left, #sec_right {
+        float: none;
+    }
+    #sec2_right {
+        width: 100%;
+    }
+    #sec2_img {
+        width: 338px;
+        margin-right: 20px;
+    }
+    #sec2_text_box {
+        margin-top: 77px;
+    }
+    #sec2_text_box > p:nth-child(1) {
+        display: block;
+        margin-bottom: 15px;
+    }
+    #sec2_text_box > p:nth-child(3), #sec2_text_box > p:nth-child(4) {
+        float: left;
+    }
+    #sec2_text_box > p:nth-child(3) {
+        margin-right: 10px;
+    }
+
+    #bg_right_icon {
+    right: -520px;
+    }
+    #bg_left_icon1 {
+        top: 45%;
+        left: -100px;
+        transition-delay: 0.3s;
+    }
+    #bg_left_icon2 {
+        left: -100%;
+    }
+
+    /* section3 시작 */
+    #container_1500 > .swiper-button-prev,
+    #container_1500 > .swiper-button-next {
+        top: 63%;
+    }
+
+    #tab_header > h1, #tab_menu {
+        float: none;
+    }
+    #tab_header {
+        text-align: center;
+    }
+    #tab_header > h1 {
+        margin-left: 0;
+    }
+    #tab_menu {
+        display: flex;
+        justify-content: center;
+    }
+    #tab_menu > li:last-child {
+        margin-right: 0;
+    }
+    #sec3 > .container_1200 {
+        padding: 150px 0;
+    }
+    #tab_con {
+        margin-top: 100px;
+        height: 340px;
+    }
+
+    /* section5 시작 */
+    #sec5 > .container_1200 {
+        padding: 0 50px;
+    }
+    .box_inner  {
+        margin: 25px auto;
+    }
+    #sec5_box > div {
+        width: 307px;
+        height: 282px;
+    }
+    .sec5_icon {
+        width: 91px;
+        height: 123px;
+    }
+    .sec5_icon > img {
+        height: 83px;
+    }
+    .box_inner > p {
+        margin-top: 10px;
+    }
+
+    /* footer 시작 */
+    footer {
+        padding: 40px 50px;
+    }
+}
